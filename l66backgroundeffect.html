@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   
+    <title>Button Effect</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style type="text/css">
+
+      body {
+        /* font-family: sans-serif;  */
+        height: 100vh;
+        background-color: turquoise;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 0;
+        margin: 0;
+
+        overflow: hidden;
+      }
+
+      .container{
+        /* width: 500px;
+        height: 500px; */
+
+        width: 100%;
+        height: 100%;
+      }
+
+      .heart{
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+
+        transform: rotate(-45deg);
+
+        opacity: 0;
+
+        position: relative;
+
+        animation-name: myheart;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+
+      .heart::before{
+        content: '';
+
+        width: 100%;
+        height: 100%;
+        background-color: pink;
+        border-radius: 50%;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        transform: translateY(-50%);
+      }
+
+      .heart::after{
+        content: '';
+
+        width: 100%;
+        height: 100%;
+        background-color: pink;
+        border-radius: 50%;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        transform: translate(50%);
+      }
+ 
+  
+      @keyframes myheart {
+        from{
+           opacity: 1;
+           top: 0;
+        }        
+       
+        to{
+           opacity: 0;
+           top: 100%;
+        }
+      }
+
+
+      .heart:nth-last-of-type(1){
+        width: 10px;
+        height: 10px;
+        left: 7%;
+        animation-delay: 1s;
+      }
+
+      
+      .heart:nth-last-of-type(2){
+        width: 20px;
+        height: 20px;
+        left: 17%;
+        animation-delay: 3s;
+      }
+
+      
+      .heart:nth-last-of-type(3){
+        width: 25px;
+        height: 25px;
+        left: 27%;
+        animation-delay: 5s;
+      }
+
+      
+      .heart:nth-last-of-type(4){
+        width: 30px;
+        height: 30px;
+        left: 55%;
+        animation-delay: 9s;
+      }
+
+      
+      .heart:nth-last-of-type(5){
+        width: 26px;
+        height: 26px;
+        left: 68%;
+        animation-delay: 7s;
+      }
+
+      
+      .heart:nth-last-of-type(6){
+        width: 35px;
+        height: 35px;
+        left: 76%;
+        animation-delay: 5s;
+      }
+
+      
+      .heart:nth-last-of-type(7){
+        width: 32px;
+        height: 32px;
+        left: 79%;
+        animation-delay: 7s;
+      }
+
+      
+      .heart:nth-last-of-type(8){
+        width: 27px;
+        height: 27px;
+        left: 80%;
+        animation-delay: 4s;
+      }
+
+      
+      .heart:nth-last-of-type(10){
+        width: 29px;
+        height: 29px;
+        left: 57%;
+        animation-delay: 5s;
+      }
+
+     
+     
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+      
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>Hover Effect</title>
+    <style type="text/css">
+
+       
+        body{
+            font-family: sans-serif;           
+            height: 100vh;
+          
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            
+        .btn{
+            background: linear-gradient(200deg,skyblue,pink);
+
+            font-size: 40px;              
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            padding: 20px;
+
+            position: relative;           
+          
+          }
+
+          .btn::after{
+            content: "10% OFF";
+
+            background-color: orange;
+            font-size: 16px;
+            border-radius: 25px;
+            padding: 5px;
+
+            position: absolute;
+            right: 10px;
+            top: -10px;
+
+            transition: all .5s;
+          }
+
+          .btn:hover::after{
+            background-color: red;
+            color: #fff;
+          }
+
+          
+
+
+          
+
+
+
+        </style>
+
+  </head>
+
+        <body>
+
+            <button type="button" class="btn">Hover Me<span class="line"></span></button>
+
+  
+        
+
+
+
+                
+             
+
+
+
+        </body>
+
+
+	
+</html>

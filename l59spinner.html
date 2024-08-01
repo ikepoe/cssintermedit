@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>Spinner</title>
+    <style type="text/css">
+
+        /* :root{
+            --w:300px;
+            --h:50px;
+        } */
+
+       
+        body{
+            height: 100vh;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 0;
+            margin: 0;
+        }
+
+       
+        .spanner{
+            width: 30px;
+            height: 30px;
+
+            animation-name: myspinner;
+            animation-duration: 1000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+            /* short Hand */
+                /* name dur itc aft */
+            animation: myspinner 1s infinite linear;
+        }
+
+
+
+       
+      
+
+        @keyframes myspinner {
+
+            from{
+                transform: rotate(0turn);
+            }
+
+            to{
+                transform: rotate(1turn);
+            }
+
+        }
+
+
+
+ 
+
+  
+
+
+
+        </style>
+
+  </head>
+
+        <body>
+
+            <img src="./img/loader.svg" class="spiner" alt="lodaer" />
+
+
+     
+           <hr/>       
+
+
+               
+             
+
+
+
+        </body>
+
+
+	
+</html>
